@@ -11,7 +11,7 @@ function SearchModal({ isOpen, onClose, onSelectCountry }) {
     // Fetch and process the GeoJSON data when component mounts
     const fetchCountries = async () => {
       try {
-        const response = await fetch('/src/data/custom.geo.json');
+        const response = await fetch('/public/data/custom.geo.json');
         const data = await response.json();
         const countryNames = data.features
           .map(feature => feature.properties.name)

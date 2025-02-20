@@ -22,7 +22,7 @@ function WorldMap({ transform, onCountryClick, selectedCountry }) {
   useEffect(() => {
     const fetchGeoData = async () => {
       try {
-        const response = await fetch('/src/data/custom.geo.json');
+        const response = await fetch('/public/data/custom.geo.json');
         const data = await response.json();
         setGeoData(data);
       } catch (error) {
