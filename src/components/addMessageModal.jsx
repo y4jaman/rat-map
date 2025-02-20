@@ -16,7 +16,7 @@ function AddMessageModal({ isOpen, onClose, setShowNotification }) { // Accept s
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const response = await fetch('/public/data/custom.geo.json');
+        const response = await fetch('/data/custom.geo.json');
         const data = await response.json();
         const countryNames = data.features
           .map(feature => feature.properties.name)
