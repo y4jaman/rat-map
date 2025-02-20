@@ -1,0 +1,23 @@
+.notification {
+    position: fixed;
+    top: -60px; /* Start above the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white; /* White background */
+    color: #333; /* Dark gray text */
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1001;
+    animation: slideDown 3s ease-in-out;
+  }
+  
+  /* Slide Down Animation */
+  @keyframes slideDown {
+    0% { top: -60px; opacity: 0; }
+    10% { top: 20px; opacity: 1; } /* Slides down */
+    90% { top: 20px; opacity: 1; }
+    100% { top: -60px; opacity: 0; } /* Slides up again */
+  }
+  

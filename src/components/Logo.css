@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+.logo-container {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+}
+
+.logo-text {
+    outline:black;
+    font-weight: bold;
+}
